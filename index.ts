@@ -21,3 +21,13 @@ const logTodo = (id: number, title: string, completed: boolean) => {
   Is it finished: ${completed}
   `);
 };
+
+class Car {}
+
+//Type annotations
+let apples: number = 10;
+let nothing: undefined = undefined;
+let now: Date = new Date();
+let colors: string[];
+const myCar: Car = new Car();
+let point: { x: number; y: number } = { x: 3, y: 10 };
