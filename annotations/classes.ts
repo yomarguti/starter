@@ -13,7 +13,7 @@ class Vehicle {
 }
 
 class Car extends Vehicle {
-  constructor(color: string) {
+  constructor(private wheels: number, color: string) {
     super(color);
   }
   stop(): void {
@@ -28,6 +28,6 @@ const vehicle = new Vehicle('red');
 
 vehicle.drive();
 
-const car = new Car('green');
+const car = new Car(4, 'green');
 car.stop();
 car.drive();

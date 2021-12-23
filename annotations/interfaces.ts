@@ -1,11 +1,11 @@
-interface Vehicle {
+interface WheelVehicle {
   name: string;
   year: Date;
   isBroken: boolean;
   summary(): string;
 }
 
-const oldCivic: Vehicle = {
+const oldCivic: WheelVehicle = {
   name: 'civic',
   year: new Date(),
   isBroken: true,
@@ -14,7 +14,7 @@ const oldCivic: Vehicle = {
   },
 };
 
-const printVehicle = (vehicle: Vehicle) => {
+const printVehicle = (vehicle: WheelVehicle) => {
   console.log(vehicle.name);
   console.log(vehicle.year);
   console.log(vehicle.isBroken);
